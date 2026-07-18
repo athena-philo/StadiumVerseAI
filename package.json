@@ -1,0 +1,14 @@
+{
+  "name": "stadium-verse-ai",
+  "version": "1.0.0",
+  "description": "StadiumVerseAI Workspace",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev": "concurrently -k -p \"[{name}]\" -n \"Frontend,Backend\" -c \"cyan,green\" \"npm run dev:frontend\" \"npm run dev:backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

@@ -1,0 +1,28 @@
+/* Application custom component-level CSS for page transitions and unified button styles */
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition {
+  animation: pageEnter 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Button micro-interaction utilities */
+.btn-glow {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.btn-glow:hover {
+  box-shadow: 0 0 20px 2px rgba(139, 92, 246, 0.25);
+  border-color: rgba(168, 85, 247, 0.45);
+}
+.btn-glow:active {
+  transform: scale(0.97);
+}

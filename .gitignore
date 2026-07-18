@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Local Environment Configs
+.env
+**/.env
+backend/.env
+
+# Build outputs
+dist/
+**/dist/
+build/
+
+# IDE / System files
+.vscode/
+.idea/
+.agents/
+.gemini/
+.DS_Store
+Thumbs.db
+*.log
