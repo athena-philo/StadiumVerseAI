@@ -22,10 +22,11 @@ export default function LiveAnnouncements() {
     setError('');
     
     try {
-      const response = await fetch('https://stadiumverseai.onrender.com/api/announce', {
-      if (!response.ok) {
-        throw new Error('Failed to load stadium broadcasts.');
-      }
+      const response = await fetch('https://stadiumverseai.onrender.com/api/announce');
+
+if (!response.ok) {
+  throw new Error('Failed to load stadium broadcasts.');
+}
       const data = await response.json();
       setAnnouncements(data.announcements);
     } catch (err) {
