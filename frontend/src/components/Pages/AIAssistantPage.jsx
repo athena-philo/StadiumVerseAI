@@ -48,7 +48,7 @@ export default function AIAssistantPage() {
   useEffect(() => {
     const fetchProactiveAlerts = async () => {
       try {
-        const response = await fetch('/api/chat/proactive', {
+        const response = await fetch('https://stadiumverseai.onrender.com/api/chat/proactive', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ 
@@ -78,7 +78,7 @@ export default function AIAssistantPage() {
   useEffect(() => {
     const fetchMatchInsights = async () => {
       try {
-        const response = await fetch('/api/chat/match-insights');
+        const response = await fetch('https://stadiumverseai.onrender.com/api/chat/match-insights');
         if (response.ok) {
           const data = await response.json();
           if (Array.isArray(data.insights)) {
@@ -127,7 +127,7 @@ export default function AIAssistantPage() {
     setIsTyping(true);
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch('https://stadiumverseai.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
