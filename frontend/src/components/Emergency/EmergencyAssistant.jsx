@@ -57,7 +57,7 @@ export default function EmergencyAssistant() {
     setResponsePlan(null);
 
     try {
-      const response = await fetch('/api/emergency', {
+      const response = await fetch('https://stadiumverseai.onrender.com/api/emergency', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

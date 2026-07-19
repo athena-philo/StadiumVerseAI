@@ -90,7 +90,7 @@ export default function VoiceAssistant() {
     setHistory(prev => [...prev, userMsg]);
     
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch('https://stadiumverseai.onrender.com/api/translate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: queryText, history })

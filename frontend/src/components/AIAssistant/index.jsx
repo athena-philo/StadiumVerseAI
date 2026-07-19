@@ -56,7 +56,7 @@ export default function AIAssistant({ onNavigate }) {
     }
 
     try {
-      const response = await fetch('/api/chat', {
+      const response = await fetch('https://stadiumverseai.onrender.com/api/chat', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

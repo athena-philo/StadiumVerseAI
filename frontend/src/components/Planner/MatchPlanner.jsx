@@ -22,7 +22,7 @@ export default function MatchPlanner() {
     setItinerary('');
 
     try {
-      const response = await fetch('/api/planner', {
+      const response = await fetch('https://stadiumverseai.onrender.com/api/planner', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

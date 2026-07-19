@@ -20,7 +20,7 @@ export default function MultilingualSupport() {
     setTranslatedText('');
 
     try {
-      const response = await fetch('/api/translate', {
+      const response = await fetch('https://stadiumverseai.onrender.com/api/translate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

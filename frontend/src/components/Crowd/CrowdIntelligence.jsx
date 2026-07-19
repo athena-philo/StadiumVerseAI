@@ -10,7 +10,7 @@ export default function CrowdIntelligence() {
   const fetchCrowdData = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/api/crowd');
+      const res = await fetch('https://stadiumverseai.onrender.com/api/crowd');
       if (!res.ok) {
         throw new Error('Failed to retrieve crowd status');
       }
