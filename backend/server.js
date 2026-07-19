@@ -1,3 +1,4 @@
+const cors = require('cors');
 require('dotenv').config();
 const express = require('express');
 const chatRoutes = require('./routes/chatRoutes');
@@ -8,6 +9,10 @@ const emergencyRoutes = require('./routes/emergencyRoutes');
 const announcementRoutes = require('./routes/announcementRoutes');
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+app.use(cors({
+  origin: 'https://stadium-verse-ai-beta.vercel.app'
+}));
 
 // Middleware
 app.use(express.json());
