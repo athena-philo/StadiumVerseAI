@@ -1,25 +1,8 @@
 {
-  "services": {
-    "frontend": {
-      "root": "frontend/"
-    },
-    "backend": {
-      "root": "backend/",
-      "entrypoint": "server.js"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": {
-        "service": "backend"
-      }
-    },
-    {
-      "source": "/:path*",
-      "destination": {
-        "service": "frontend"
-      }
+      "destination": "https://stadiumverseai.onrender.com/api/:path*"
     }
   ]
 }
