@@ -108,6 +108,4 @@ https://github.com/athena-philo/StadiumVerseAI
 
 Developed for the **Hack2Skill Build with AI Challenge**.
 
-## 📜 License
 
-This project was developed for the **Hack2Skill Build with AI Challenge**.
